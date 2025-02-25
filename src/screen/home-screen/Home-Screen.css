@@ -1,0 +1,3 @@
+.homeScreen{
+    @apply border border-solid flex flex-col bg-[#F7FAFA];
+}

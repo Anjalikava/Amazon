@@ -1,0 +1,50 @@
+/* Navbar Styles */
+.navbar-bottom {
+  background-color: #232f3e; /* Tailwind bg-[#232f3e] */
+  color: white; /* Tailwind text-white */
+  font-size: 0.8rem; /* Tailwind text-[0.8rem] */
+  font-family: sans-serif; /* Tailwind font-sans */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 8px 10px; /* Reduce padding */
+  display: flex;
+  align-items: center;
+  height: 40px; /* Reduce navbar height */
+}
+
+.navbar-bottom .link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 1rem; /* Tailwind mr-4 */
+  padding: 0.25rem; /* Tailwind p-1 */
+  border: 1px solid transparent; /* Tailwind border border-transparent */
+  border-radius: 0.125rem; /* Tailwind rounded-sm */
+  height: 2rem; /* Reduce height of each link */
+}
+
+.navbar-bottom .link:hover {
+  border-color: white; /* Tailwind border-white */
+  border-radius: 0.25rem; /* Tailwind rounded-md */
+}
+
+.navbar-bottom svg {
+  margin-right: 0.5rem; /* Tailwind mr-2 */
+  height: 1.25rem; /* Reduce icon size */
+  width: 1.25rem; /* Reduce icon size */
+}
+
+/* Hide Scrollbar for horizontal scrolling */
+.navbar-bottom::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit browsers */
+}
+
+.navbar-bottom {
+  scrollbar-width: none; /* Firefox: Hide scrollbar */
+}
+
+/* For large screens */
+@media (min-width: 1024px) {
+  .hidden.lg\:inline-flex {
+    display: inline-flex; /* Tailwind inline-flex */
+  }
+}

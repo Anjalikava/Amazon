@@ -1,0 +1,558 @@
+
+
+.create-account-container {
+    height: 100%;
+    overflow: auto;
+}
+
+.create-account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  /* Amazon logo */
+  .amazon-logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  /* Form box */
+  .create-account-box {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Input fields */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+/* Mobile number field */
+.mobile-input {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.country-code {
+    padding: 10px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100px;
+  }
+  
+  /* Info icon */
+  .password-info {
+    font-size: 12px;
+    color: #007185;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .info-icon {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  /* Text below the form */
+  .verification-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Submit button */
+  .verify-btn {
+    width: 100%;
+    font-weight: bold;
+    background-color: #f0c14b;
+    border-color: #a88734;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .verify-btn:hover {
+    background-color: #e2a933;
+  }
+  
+  /* Divider */
+  hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Business account text */
+  .business-text {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .business-text a {
+    color: #0066c0;
+    text-decoration: none;
+  }
+  
+  /* Sign-in text */
+  .signin-text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .signin-text a {
+    color: #0066c0;
+    text-decoration: none;
+  }
+  
+  /* Terms and conditions */
+  .terms-text {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .terms-text a {
+    text-decoration: none;
+    color: #0066c0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .create-account-box {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .create-account-box {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .amazon-logo {
+      width: 80px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .form-control, .verify-btn {
+      padding: 8px;
+    }
+  
+    .password-info, .verification-text {
+      font-size: 12px;
+    }
+  }
+/* Centering the form */
+.create-account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  /* Amazon logo */
+  .amazon-logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  /* Form box */
+  .create-account-box {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Input fields */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Mobile number field */
+  .mobile-input {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  
+  .country-code {
+    padding: 10px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    width: 100px;
+  }
+  
+  /* Info icon */
+  .password-info {
+    font-size: 12px;
+    color: #007185;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .info-icon {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  /* Text below the form */
+  .verification-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Submit button */
+  .verify-btn {
+    width: 100%;
+    font-weight: bold;
+    background-color: #f0c14b;
+    border-color: #a88734;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .verify-btn:hover {
+    background-color: #e2a933;
+  }
+  
+  /* Divider */
+  hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Business account text */
+  .business-text {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .business-text a {
+    color: #0066c0;
+    text-decoration: none;
+  }
+  
+  /* Sign-in text */
+  .signin-text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .signin-text a {
+    color: #0066c0;
+    text-decoration: none;
+  }
+  
+  /* Terms and conditions */
+  .terms-text {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .terms-text a {
+    text-decoration: none;
+    color: #0066c0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .create-account-box {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .create-account-box {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .amazon-logo {
+      width: 80px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .form-control, .verify-btn {
+      padding: 8px;
+    }
+  
+    .password-info, .verification-text {
+      font-size: 12px;
+    }
+  }
+/* Centering the form */
+.create-account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  /* Amazon logo */
+  .amazon-logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  /* Form box */
+  .create-account-box {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Input fields */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Mobile number field */
+  .mobile-input {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  
+  .country-code {
+    padding: 10px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    width: 100px;
+  }
+  
+  /* Info icon */
+  .password-info {
+    font-size: 12px;
+    color: #007185;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .info-icon {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  /* Text below the form */
+  .verification-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Submit button */
+  .verify-btn {
+    width: 100%;
+    font-weight: bold;
+    background-color: #f0c14b;
+    border-color: #a88734;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .verify-btn:hover {
+    background-color: #e2a933;
+  }
+  
+  /* Divider */
+  hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Business account text */
+  .business-text {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .business-text a {
+    color: #0066c0;
+    text-decoration: none;
+  }
+  
+  /* Sign-in text */
+  .signin-text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .signin-text a {
+    color: #0066c0;
+    text-decoration: none;
+  }
+  
+  /* Terms and conditions */
+  .terms-text {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .terms-text a {
+    text-decoration: none;
+    color: #0066c0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .create-account-box {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .create-account-box {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .amazon-logo {
+      width: 80px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .form-control, .verify-btn {
+      padding: 8px;
+    }
+  
+    .password-info, .verification-text {
+      font-size: 12px;
+    }
+  }
+  .footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .footer a {
+    margin: 0 10px;
+    color: #0066c0;
+    text-decoration: none;
+  }
+  
+  .footer p {
+    margin-top: 10px;
+  }      

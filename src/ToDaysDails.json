@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "price":"$8.50",
+        "imageUrl": "https://m.media-amazon.com/images/I/513qacLplRL._SX300_SY300_QL70_FMwebp_.jpg",
+        "discount": "Up to 20% off",
+        "deal": "Limited Time Deal",
+        "description": "Ekhasa | Starting @999 Included"
+    },
+    {
+        "id": 2,
+        "price":"$8.50",
+        "imageUrl": "https://m.media-amazon.com/images/I/81BJZFDXk5L._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg",
+        "discount": "Up to 15% off",
+        "deal": "Flash Sale",
+        "description": "LEGO Star Wars Set | Starting @2999 Included"
+    },
+    {
+        "id": 3,
+        "price":"$8.50",
+        "imageUrl": "https://m.media-amazon.com/images/I/41dvjBZ2zYL._SY300_SX300_QL70_FMwebp_.jpg",
+        "discount": "Up to 10% off",
+        "deal": "Deal of the Day",
+        "description": "Fisher-Price Playset | Starting @1799 Included"
+    },
+    {
+        "id": 4,
+        "price":"$8.50",
+        "imageUrl": "https://m.media-amazon.com/images/I/41FA4kuYq9L.jpg",
+        "discount": "Up to 25% off",
+        "deal": "Weekend Offer",
+        "description": "Himalayan Salt Lamp | Starting @2499 Included"
+    },
+    {
+        "id": 5,
+        "price":"$8.50",
+        "imageUrl": "https://m.media-amazon.com/images/I/61jUz-lCOfL._AC_UL320_.jpg",
+        "discount": "Up to 40% off",
+        "deal": "Special Offer",
+        "description": "Yoga Mat | Starting @799 Included"
+    },
+    {
+        "id": 6,
+        "price":"$8.50",
+        "imageUrl": "https://m.media-amazon.com/images/I/51jhtHm8U2L._SX300_SY300_QL70_FMwebp_.jpg",
+        "discount": "Up to 30% off",
+        "deal": "Limited Time Deal",
+        "description": "Hot Wheels Cars Set | Starting @1499 Included"
+    },
+    {
+        "id": 7,
+        "price":"$8.50",
+        "imageUrl": "https://m.media-amazon.com/images/I/41f80Qu98zL._SY300_SX300_.jpg",
+        "discount": "Up to 50% off",
+        "deal": "Clearance Sale",
+        "description": "Amazon Echo Dot 4th Gen | Starting @3499 Included"
+    },
+    {
+        "id": 8,
+        "price":"$8.50",
+        "imageUrl": "https://m.media-amazon.com/images/I/31emgKPtZSL._SX300_SY300_QL70_FMwebp_.jpg",
+        "discount": "Up to 35% off",
+        "deal": "Hot Deal",
+        "description": "Smart Home Security Camera | Starting @4499 Included"
+    }
+]

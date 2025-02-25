@@ -1,0 +1,212 @@
+.homeBanner {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: normal;
+
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.homeBannerimg {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+
+.homeBannerimg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.bannerOverlay {
+  position: absolute; 
+ 
+  top:40%;
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
+  background-color:transparent;
+}
+
+.bannerOverlay.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.homeBannerItemDiv {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 20px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+   
+}
+
+.homeBannerItemDiv::-webkit-scrollbar {
+  display: none;
+}
+
+.homeBannerItemDiv {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.homeBannerItemDivCard {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 250px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+  min-height: 330px;
+  
+}
+
+.homeBannerItemDivCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.homeBannerItemDivCardTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 10px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.imgHomeBannerItemDivCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.imgBannerHomeDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.imgBannerHomeDivImg {
+  width: 100px;
+ 
+}
+
+.imgBannerImgName {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.seeMoreHomeBanner {
+  font-size: 14px;
+  color: #007185;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+.homeBannerInfo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.homeBannerItemDiv {
+  position: relative;
+}
+
+.homeBannerItemDivCard {
+  margin-top: 40px; /* Adjust to prevent overlap */
+  position: relative;
+}
+
+
+@media screen and (max-width: 720px) {
+  .homeBannerItemDiv {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Two columns */
+    grid-auto-rows: auto; /* Flexible row height */
+   
+    padding: 20px;
+    /* padding-left: 50px; */
+    padding-top: 10%;
+    padding-bottom: 150%;
+    background-color:#e5e7eb;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    overflow: auto; /* Enables scrolling in both directions */
+    scroll-behavior: smooth;
+  }
+
+  .homeBannerItemDivCard {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+    height: 330px;
+    width: 250px; /* Fixed card width */
+    scroll-snap-align: center; /* Snap effect when scrolling */
+  }
+
+  .homeBannerItemDivCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .homeBannerItemDivCardTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+}
+
+
+
+
+

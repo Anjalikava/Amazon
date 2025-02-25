@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "price":"$9.52",
+        "imageUrl": "https://m.media-amazon.com/images/I/31hcJbP0BuL._SX300_SY300_QL70_FMwebp_.jpg",
+        "discount": "Up to 20% off",
+        "deal": "Limited Time Deal",
+        "description": "Smartphone | Starting @9999 Included"
+    },
+    {
+        "id": 2,
+        "price":"$9.52",
+        "imageUrl": "https://m.media-amazon.com/images/I/41h1ONPpYtL._SY300_SX300_QL70_FMwebp_.jpg",
+        "discount": "Up to 15% off",
+        "deal": "Flash Sale",
+        "description": "4K TV | Starting @24999 Included"
+    },
+    {
+        "id": 3,
+        "price":"$9.52",
+        "imageUrl": "https://m.media-amazon.com/images/I/41zjvrP087L._SX300_SY300_QL70_FMwebp_.jpg",
+        "discount": "Up to 25% off",
+        "deal": "Deal of the Day",
+        "description": "Wireless Earbuds | Starting @2999 Included"
+    },
+    {
+        "id": 4,
+        "price":"$9.52",
+        "imageUrl": "https://m.media-amazon.com/images/I/41OIzOJBsGL._SX300_SY300_QL70_FMwebp_.jpg",
+        "discount": "Up to 30% off",
+        "deal": "Weekend Offer",
+        "description": "Laptop | Starting @34999 Included"
+    },
+    {
+        "id": 5,
+        "price":"$9.52",
+        "imageUrl": "https://m.media-amazon.com/images/I/416t0eHB3SL._SX300_SY300_QL70_FMwebp_.jpg",
+        "discount": "Up to 10% off",
+        "deal": "Special Offer",
+        "description": "Smartphone | Starting @19999 Included"
+    },
+    {
+        "id": 6,
+        "price":"$9.52",
+        "imageUrl": "https://m.media-amazon.com/images/I/31JfYVmS2pL._SX300_SY300_QL70_FMwebp_.jpg",
+        "discount": "Up to 20% off",
+        "deal": "Limited Time Deal",
+        "description": "4K TV | Starting @29999 Included"
+    },
+    {
+        "id": 7,
+        "price":"$9.52",
+        "imageUrl": "https://m.media-amazon.com/images/I/31uHqrIlX7L._SX300_SY300_QL70_FMwebp_.jpg",
+        "discount": "Up to 25% off",
+        "deal": "Clearance Sale",
+        "description": "Wireless Earbuds | Starting @1999 Included"
+    },
+    {
+        "id": 8,
+        "price":"$9.52",
+        "imageUrl": "https://m.media-amazon.com/images/I/41buO3wnDwL._SY300_SX300_QL70_FMwebp_.jpg",
+        "discount": "Up to 15% off",
+        "deal": "Hot Deal",
+        "description": "Laptop | Starting @44999 Included"
+    }
+]

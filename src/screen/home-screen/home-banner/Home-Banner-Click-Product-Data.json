@@ -1,0 +1,67 @@
+{
+    "BannerClickProductData": [
+        {
+            "itemTitle": "Revamp your home in style | Up to 60% off ",
+            "imgs": [
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_furnishings_2._SY116_CB584596691_.jpg", "name": "Home Furnishings", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_decor_1._SY116_CB584596691_.jpg", "name": "Home Decor", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_storage_1._SY116_CB584596691_.jpg", "name": "Home Storage", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_lighting_2._SY116_CB584596691_.jpg", "name": "Home Lighting", "Price": "$30" }
+            ]
+        },
+        {
+            "itemTitle": "Appliances for your home | Up to 55% off",
+            "imgs": [
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg", "name": "Ac", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg", "name": "Refrigerators", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg", "name": "Microwave Oven", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg", "name": "Washing Machine", "Price": "$30" }
+            ]
+        },
+        {
+            "itemTitle": "Automotive essentials | Up to 60% off",
+            "imgs": [
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg", "name": "Glass Care", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg", "name": "Rim & Tyre Care", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg", "name": "Vega Helmet", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg", "name": "Car Vacuum Cleaner", "Price": "$30" }
+            ]
+        },
+        {
+            "itemTitle": "Amazon Brands & more | Up to 60% off",
+            "imgs": [
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_186_2._SY116_CB558389341_.jpg", "name": "Bedsheets & More", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_186_3._SY116_CB558389341_.jpg", "name": "Cushion Covers", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_186_4._SY116_CB558389341_.jpg", "name": "Curtains", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_186_1._SY116_CB558389341_.jpg", "name": "Pillows", "Price": "$30" }
+            ]
+        },
+        {
+            "itemTitle": "Up to 70% off | Styles for women",
+            "imgs": [
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2018/QC/Tools1x._SY116_CB424026090_.jpg", "name": "Hand Tools", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2021/BAU_GW_Graphics/PCQC/2._SY116_CB643952439_.jpg", "name": "Power Tools", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2021/BAU_GW_Graphics/PCQC/1._SY116_CB643952439_.jpg", "name": "Measurement Tools", "Price": "$30" },
+                { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2018/QC/med1x._SY116_CB424026091_.jpg", "name": "Medical Equipment", "Price": "$30" }
+            ]
+        },
+        {
+        "itemTitle": "Up to 80% off | Amazon Brands & more",
+        "imgs": [
+            { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Deeksha/QC_186x116_1._SY116_CB598553050_.jpg", "name": "Baby & Diapers", "Price": "$30" },
+            { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Deeksha/QC_186x116_2._SY116_CB598553050_.jpg", "name": "Baby & Bedding Set", "Price": "$30" },
+            { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Deeksha/QC_372x232_3._SY116_CB598553751_.jpg", "name": "Baby & Toys", "Price": "$30" },
+            { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Deeksha/QC_186x116_4._SY116_CB598553050_.jpg", "name": "Toys", "Price": "$30" }
+        ]
+    },
+    {
+        "itemTitle": "Up to 60% off | Professional tools, testing & more",
+        "imgs": [
+            { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2018/QC/Tools1x._SY116_CB424026090_.jpg", "name": "Hand Tools", "Price": "$30" },
+            { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2021/BAU_GW_Graphics/PCQC/2._SY116_CB643952439_.jpg", "name": "Power Tools", "Price": "$30" },
+            { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2021/BAU_GW_Graphics/PCQC/1._SY116_CB643952439_.jpg", "name": "Measurement Tools", "Price": "$30" },
+            { "url": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2018/QC/med1x._SY116_CB424026091_.jpg", "name": "Medical Equipment", "Price": "$30" }
+        ]
+    }
+    ]
+}

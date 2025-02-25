@@ -1,0 +1,138 @@
+.navbar-banner {
+  @apply bg-black text-white border border-gray-400 font-sans text-[0.8rem];
+}
+
+.navbar-container {
+  @apply flex items-center justify-between h-[70px] pr-5 pl-5; /* Align items properly */
+}
+
+.logo-container {
+  @apply flex items-center flex-grow-0;
+}
+
+.logo-image {
+  @apply w-24 cursor-pointer;
+}
+
+.menu-icon-container {
+  @apply  items-center justify-center h-10 w-10 cursor-pointer;
+}
+.dropdown-delivery:hover{
+  @apply border border-white rounded-md box-border;
+}
+.logo-container {
+  @apply flex items-center flex-grow-0;
+}
+.menu-icon {
+  @apply text-white text-3xl ;
+}
+
+.menu-dropdown {
+  @apply absolute top-14 right-4 text-white shadow-lg  w-48 p-2 z-50 bg-black;
+}
+
+.menu-item {
+  @apply flex items-center gap-2 p-2;
+}
+
+.menu-item .menu-icon {
+  @apply text-white;
+}
+
+.navbar-container {
+  @apply flex items-center justify-between;
+}
+
+@media (min-width: 768px) {
+  .menu-icon-container {
+    @apply hidden; /* Hide menu on medium screens and above */
+  }
+}
+
+
+.delivery-address {
+  @apply hidden md:flex items-center p-2 mr-4 border border-transparent rounded-sm box-border h-14; /* Hidden on small screens */
+}
+
+.delivery-icon {
+  @apply h-10;
+}
+.delivery-address:hover {
+  @apply border border-white rounded-md box-border py-[0.45rem];
+}
+
+.address-text {
+  @apply flex flex-col;
+}
+
+.search-bar {
+  @apply hidden md:flex items-center h-10 flex-grow mt-2; /* Hidden on small screens */
+}
+
+.category-dropdown {
+  @apply p-2 h-full text-black text-sm border-r border-gray-300 rounded-l-sm;
+}
+
+.category-dropdown:focus {
+  @apply border-[3px] border-orange-500;
+}
+
+
+.search-input {
+  @apply p-2 h-full flex-grow outline-none pl-4 text-black;
+}
+
+.search-input:focus {
+  @apply border-2 border-orange-500;
+}
+
+.search-button {
+  @apply flex items-center justify-center h-10 w-12 bg-yellow-400 border-l border-gray-300 rounded-r-sm hover:bg-yellow-500;
+}
+
+.search-button:focus {
+  @apply border-2 border-orange-500;
+}
+
+.search-icon {
+  @apply text-black;
+}
+
+.right-section {
+  @apply hidden md:flex items-center gap-2 ml-6 whitespace-nowrap; /* Hidden on small screens */
+}
+
+.link {
+  @apply p-2 border border-transparent rounded-sm box-border h-[13];
+}
+
+.link:hover {
+  @apply border border-white rounded-md box-border py-[0.45rem];
+}
+
+.basket-section {
+  @apply relative flex items-center;
+}
+
+.basket-count {
+  @apply absolute top-0 right-0 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold;
+}
+
+.basket-icon {
+  @apply h-4;
+}
+
+.basket-text {
+  @apply hidden md:inline mt-2;
+}
+
+.flag-icon {
+  @apply h-7 w-7;
+  background-image: url('/images/indian-flag.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.language-text {
+  @apply font-semibold text-[0.90rem] ;
+}

@@ -1,0 +1,149 @@
+.flag-section-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .flag-section {
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .flag-section:hover {
+    border-color: white;
+    border-radius: 6px;
+    padding: 0.4rem 0.5rem;
+  }
+  
+  .flag-icon {
+    width: 24px;
+    height: 30px;
+  }
+  
+  .language-text {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .dropdown-arrow {
+    margin-left: 5px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    z-index: 100;
+    width: max-content;
+  }
+  
+  .dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown-menu ul li {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+
+  .dropdown-menu ul li:active {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    color: orange; /* Add this line to change text color to orange when clicked */
+  }
+
+  .dropdown-menu ul li.selected {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    color: orange; /* Add this line to change text color to orange when selected */
+  }
+  
+  .dropdown-menu ul li input[type="radio"] {
+    appearance: none; /* Remove the default radio button style */
+    -webkit-appearance: none; /* Remove the default radio button style in Webkit browsers */
+    -moz-appearance: none; /* Remove the default radio button style in Firefox */
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    margin-right: 0.5rem;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Custom color when not selected */
+  .dropdown-menu ul li input[type="radio"]:not(:checked) {
+    background-color: white;
+  }
+  
+
+  /* Create a custom inner circle (dot) */
+  .dropdown-menu ul li input[type="radio"]:checked::before {
+    content: "";
+    position: absolute;
+   top:3px;
+   left:2px;
+    width: 10px;
+    height: 8px;
+    background-color: orange; 
+    border-radius: 50%;
+   
+  }
+  
+  .dropdown-menu ul li input {
+    margin-right: 0.5rem;
+  }
+  
+  .dropdown-footer {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .dropdown-footer p {
+    margin: 0.2rem 0;
+    cursor: pointer;
+  }
+  .dropdown-footer p:active {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    color: orange; /* Add this line to change text color to orange when selected */
+  }
+
+  .dropdown-footer p.selected {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    color: orange; /* Add this line to change text color to orange when selected */
+  }
+
+  .dropdown-footer p.selected {
+    border: 1px solid orange; /* Add border to selected item */
+    border-radius: 4px;
+  }
+  
