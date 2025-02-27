@@ -9,7 +9,7 @@ import HomeProductDetails from "./screen/home-screen/home-details/Home-Product-D
 import OfferDetails from "./screen/home-screen/home-details/Home-product-Offers";
 import { HomeScreen } from "./screen/home-screen/Home-Screen";
 import WiseList from "./components/navbar/navbar-banner/language-drop-down/WiseList";
-import AddToCart from "./components/navbar/navbar-banner/cart/cart";
+import AddToCart from "./components/navbar/navbar-banner/cart/Cart";
 import Wishlist from "./components/navbar/navbar-banner/language-drop-down/WiseList";
 import Login from "./screen/login-register/login/login";
 import CreateAccount from "./screen/login-register/register/Register";
