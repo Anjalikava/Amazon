@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import HomeBanner from "./screen/home-screen/home-banner/Home-Banner";
 import HomeDetails from "./screen/home-screen/home-banner/Home-Banner-Click-Products";
@@ -13,29 +13,110 @@ import AddToCart from "./components/navbar/navbar-banner/cart/cart";
 import Wishlist from "./components/navbar/navbar-banner/language-drop-down/WiseList";
 import Login from "./screen/login-register/login/login";
 import CreateAccount from "./screen/login-register/register/Register";
+import { AuthProvider } from "./screen/contex/AuthContext";
+import ProtectedRoute from "./screen/contex/ProtectedRoute";
 
+const AppContent = () => {
+    const location = useLocation();
+
+    // Hide Navbar for login and createAccount pages
+    const hideNavbarRoutes = ["/login", "/createAccount"];
+    const shouldShowNavbar = !hideNavbarRoutes.includes(location.pathname);
+
+    return (
+        <div className="p-0 m-0 box-border">
+            {shouldShowNavbar && <Navbar />} {/* Navbar only shows on protected routes */}
+
+            <Routes>
+                <Route path="/login" element={<Login />} />
+                <Route path="/createAccount" element={<CreateAccount />} />
+                <Route path="/register" element={<CreateAccount />} />
+
+                {/* Protected Routes */}
+                <Route
+                    path="/"
+                    element={
+                        <ProtectedRoute>
+                            <HomeScreen />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="/home-banner"
+                    element={
+                        <ProtectedRoute>
+                            <HomeBanner />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="/home-details"
+                    element={
+                        <ProtectedRoute>
+                            <HomeDetails />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="/cart"
+                    element={
+                        <ProtectedRoute>
+                            <AddToCart />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="/wishlist"
+                    element={
+                        <ProtectedRoute>
+                            <Wishlist />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="/product-data"
+                    element={
+                        <ProtectedRoute>
+                            <ProductData />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="/your-lists/wish-list"
+                    element={
+                        <ProtectedRoute>
+                            <WiseList />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="/product/:id"
+                    element={
+                        <ProtectedRoute>
+                            <HomeProductDetails />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="/offer/:id"
+                    element={
+                        <ProtectedRoute>
+                            <OfferDetails />
+                        </ProtectedRoute>
+                    }
+                />
+            </Routes>
+        </div>
+    );
+};
 
 const App = () => {
     return (
-        <Router>
-            <div className="p-0 m-0 box-border">
-                <Navbar />
-                <Routes>
-                    <Route path="/" element={<HomeScreen />} />
-                    <Route path="/home-banner" element={<HomeBanner />} />
-                    <Route path="/home-details" element={<HomeDetails />} />
-                    <Route path="/cart" element={<AddToCart />} />
-                    <Route path="/wishlist" element={<Wishlist />} />
-                    <Route path="/product-data" element={<ProductData />} />
-                    <Route path="/your-lists/wish-list" element={<WiseList />} />
-                    <Route path="/product/:id" element={<HomeProductDetails />} />
-                    <Route path="/offer/:id" element={<OfferDetails />} />
-                    <Route path="/login" element={<Login/>} />
-                    <Route path="/register" element={<CreateAccount />} />
-                    <Route path="*" element={<Navigate to="/" />} />
-                </Routes>
-            </div>
-        </Router>
+        <AuthProvider>
+            <Router>
+                <AppContent />
+            </Router>
+        </AuthProvider>
     );
 };
 

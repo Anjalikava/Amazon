@@ -60,6 +60,7 @@
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
+  
 }
 
 .country-code {
@@ -67,7 +68,8 @@
     border: 1px solid #a6a6a6;
     border-radius: 4px;
     font-size: 14px;
-    width: 100px;
+    width: 100%;
+    background-color: red;
   }
   
   /* Info icon */

@@ -1,8 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Register.css";
 
 const CreateAccount = () => {
-return (
+  const [name, setName] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState({});
+  const navigate = useNavigate(); // For redirection
+
+  const validateForm = () => {
+    let errors = {};
+
+    if (!name.trim()) {
+      errors.name = "Enter your name.";
+    }
+
+    if (!mobile.trim()) {
+      errors.mobile = "Enter your mobile number.";
+    } else if (!/^\d{10,15}$/.test(mobile)) {
+      errors.mobile = "Enter a valid mobile number.";
+    }
+
+    if (!password.trim()) {
+      errors.password = "Enter your password.";
+    } else if (password.length < 6) {
+      errors.password = "Passwords must be at least 6 characters.";
+    }
+
+    setErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      // Save data to localStorage
+      const userData = { name, mobile, password };
+      localStorage.setItem("user", JSON.stringify(userData));
+
+      // Show success message
+      alert("Account Created Successfully!");
+
+      // Redirect to login page
+      navigate("/login");
+    }
+  };
+
+  return (
     <div className="create-account-container">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
@@ -11,32 +56,50 @@ return (
       />
       <div className="create-account-box">
         <h2>Create Account</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           <label>Your name</label>
-          <input type="text" placeholder="First and last name" className="form-control" />
+          <input
+            type="text"
+            placeholder="First and last name"
+            className={`form-control ${errors.name ? "input-error" : ""}`}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          {errors.name && <p className="error-message">{errors.name}</p>}
 
           <label>Mobile number</label>
-          <div className="mobile-input" >
-            <select className="country-code">
-              <option>IN +91</option>
-              <option>US +1</option>
-              <option>UK +44</option>
-            </select>
-            <input type="text" placeholder="Mobile number" className="form-control" />
+          <div className="mobile-input">
+          <div className="w-[300px] ">
+  <select className="w-full p-2 border border-gray-300 rounded">
+    <option>IN +91</option>
+    <option>US +1</option>
+    <option>UK +44</option>
+  </select>
+</div>
+
+            <input
+              type="text"
+              placeholder="Mobile number"
+              className={`form-control ${errors.mobile ? "input-error" : ""}`}
+              value={mobile}
+              onChange={(e) => setMobile(e.target.value)}
+            />
           </div>
+          {errors.mobile && <p className="error-message">{errors.mobile}</p>}
 
           <label>Password</label>
-          <input type="password" placeholder="At least 6 characters" className="form-control" />
-          <p className="password-info">
-            <span className="info-icon">ℹ</span> Passwords must be at least 6 characters.
-          </p>
+          <input
+            type="password"
+            placeholder="At least 6 characters"
+            className={`form-control ${errors.password ? "input-error" : ""}`}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          {errors.password && <p className="error-message">{errors.password}</p>}
 
-          <p className="verification-text">
-            To verify your number, we will send you a text message with a temporary code.
-            Message and data rates may apply.
-          </p>
-
-          <button className="btn btn-warning verify-btn">Verify mobile number</button>
+          <button className="btn btn-warning verify-btn" type="submit">
+            Verify mobile number
+          </button>
         </form>
 
         <hr />
@@ -47,7 +110,7 @@ return (
         </p>
 
         <p className="signin-text">
-          Already have an account? <a href="#">Sign in ›</a>
+          Already have an account? <a href="/login">Sign in ›</a>
         </p>
 
         <p className="terms-text">
@@ -55,7 +118,7 @@ return (
           <a href="#">Conditions of Use</a> and <a href="#">Privacy Policy</a>.
         </p>
       </div>
-       <footer className="footer">
+      <footer className="footer">
         <a href="#">Conditions of Use</a>
         <a href="#">Privacy Notice</a>
         <a href="#">Help</a>
