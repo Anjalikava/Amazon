@@ -11,7 +11,7 @@ import { HomeScreen } from "./screen/home-screen/Home-Screen";
 import WiseList from "./components/navbar/navbar-banner/language-drop-down/WiseList";
 import AddToCart from "./components/navbar/navbar-banner/cart/Cart";
 import Wishlist from "./components/navbar/navbar-banner/language-drop-down/WiseList";
-import Login from "./screen/login-register/login/login";
+import Login from "./screen/login-register/login/Login";
 import CreateAccount from "./screen/login-register/register/Register";
 import { AuthProvider } from "./screen/contex/AuthContext";
 import ProtectedRoute from "./screen/contex/ProtectedRoute";
