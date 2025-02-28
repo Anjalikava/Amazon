@@ -1,7 +1,7 @@
 import React from "react";
 import { Search, ShoppingCart, Menu } from "@mui/icons-material";
 import { LocationOn } from "@mui/icons-material";
-import AmazonLogo from "../../../assets/amazonLogo.png";
+import AmazonLogo from "../../../../public/images/amazonLogo.png";
 import "./Navbar-Banner.css";
 import LanguageDropdown from "./language-drop-down/Language-Drop-Down";
 import { useState, useEffect, useRef } from "react";
