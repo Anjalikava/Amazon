@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import HomeIcon from '@mui/icons-material/Home';
 import "./Navbar-Belt.css"; 
 
 const NavbarBottom = () => {
@@ -23,14 +23,11 @@ const NavbarBottom = () => {
     <>
       
       <div className="navbar-bottom">
-        <div className="flex items-center space-x-3 p-2 pl-6">
-          <p className="link flex items-center" onClick={toggleSidebar}>
-            <svg className="h-6 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
-            </svg>
-            All
-          </p>
-          <p className="link" onClick={handleNavigationHome}>Home</p>
+        <div className="flex items-center  p-2 pl-6">
+        <p className="link" onClick={handleNavigationHome}>
+  <HomeIcon />
+ 
+</p>
           <p className="link" onClick={() => handleNavigation("books")}>Books</p>
           <p className="link" onClick={() => handleNavigation("fashion-clothing")}>Fashion Clothing</p>
           <p className="link hidden lg:inline-flex" onClick={() => handleNavigation("electronics")}>Electronics</p>

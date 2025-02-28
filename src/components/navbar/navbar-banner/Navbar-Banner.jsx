@@ -23,6 +23,12 @@ const NavbarBanner = () => {
   const textMeasureRef = useRef(null);
   const selectRef = useRef(null);
   const navigate = useNavigate();
+
+
+
+
+
+
   const [location, setLocation] = useState(
     localStorage.getItem("deliveryLocation") || "Ahmedabad 382350"
   );
@@ -118,15 +124,16 @@ const NavbarBanner = () => {
         {menuOpen && (
           <div className="menu-dropdown">
             <div className="menu-item">
-              <div className="address-text dropdown-delivery pl-0.25 ">
-              <div className="delivery-address hidden md:flex cursor-pointer" onClick={handleLocationChange}>
-      <LocationOn className="delivery-icon" />
-      <div className="address-text">
-        <p className="text-xs text-slate-300">Delivering to {location}</p>
-        <p className="font-bold">Update location</p>
+           
+            <div className="address-text dropdown-delivery pl-0.25">
+      <div className="phone-delivery-address flex cursor-pointer" onClick={handleLocationChange}>
+        <LocationOn className="delivery-icon" />
+        <div className="address-text">
+          <p className="text-xs text-slate-300">Delivering to {location}</p>
+          <p className="font-bold">Update location</p>
+        </div>
       </div>
     </div>
-              </div>
             </div>
 
             <div className="">
@@ -198,7 +205,7 @@ const NavbarBanner = () => {
 
         {/* Delivery Address (hidden on small screens) */}
         <div className="delivery-address hidden md:flex cursor-pointer" onClick={handleLocationChange}>
-      <LocationOn className="delivery-icon" />
+      <LocationOn className="delivery-icon " />
       <div className="address-text">
         <p className="text-xs text-slate-300">Delivering to {location}</p>
         <p className="font-bold">Update location</p>
@@ -227,20 +234,6 @@ const NavbarBanner = () => {
         {/* Right Section (hidden on small screens) */}
         <div className="right-section hidden md:flex">
           <LanguageDropdown />
-          {/* <div className="flag-section link">
-            <div className="flex">
-              <img
-                src={IndianFlag}
-                alt="Indian Flag"
-                className="flag-icon"
-               
-              />
-              <div className="pt-1 pl-1">
-                <span className="language-text">EN</span>
-                <span className="dropdown-arrow">▼</span>
-              </div>
-            </div>
-          </div> */}
           <div className="relative group">
             {/* Account & Lists Section */}
             <div className="account-section link cursor-pointer p-2">
