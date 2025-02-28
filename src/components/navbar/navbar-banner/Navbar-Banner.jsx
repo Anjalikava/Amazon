@@ -1,45 +1,33 @@
 import React from "react";
 import { Search, ShoppingCart, Menu } from "@mui/icons-material";
 import { LocationOn } from "@mui/icons-material";
-import AmazonLogo from "../../../../public/images/amazonLogo.png";
+import AmazonLogo from "../../../images/amazonLogo.png";
 import "./Navbar-Banner.css";
 import LanguageDropdown from "./language-drop-down/Language-Drop-Down";
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
-
-
 const NavbarBanner = () => {
-  // State to toggle the menu
   const [menuOpen, setMenuOpen] = useState(false);
   const [cartCount, setCartCount] = useState(0);
   const [user, setUser] = useState(null);
   const [wishlistCount, setWishlistCount] = useState(0);
-  // Toggle menu visibility
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const [selectedText, setSelectedText] = useState("All");
   const textMeasureRef = useRef(null);
   const selectRef = useRef(null);
   const navigate = useNavigate();
 
-
-
-
-
-
   const [location, setLocation] = useState(
     localStorage.getItem("deliveryLocation") || "Ahmedabad 382350"
   );
 
-  // Update localStorage when location changes
-  useEffect(() => {
+  useEffect(() => {  // Update localStorage when location changes
     localStorage.setItem("deliveryLocation", location);
   }, [location]);
 
-  // Function to handle location change
-  const handleLocationChange = () => {
+  const handleLocationChange = () => {   // Function to handle location change
     const newLocation = prompt("Enter new location (City & Pincode):", location);
     if (newLocation) {
       setLocation(newLocation); // Update state
@@ -58,6 +46,7 @@ const NavbarBanner = () => {
   const handleChange = (e) => {
     setSelectedText(e.target.options[e.target.selectedIndex].text);
   };
+
   useEffect(() => {
     const updateCartCount = () => {
       const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -71,9 +60,6 @@ const NavbarBanner = () => {
       window.removeEventListener("cartUpdated", updateCartCount);
     };
   }, []);
-
-
-
 
   useEffect(() => {
     const updateWishlistCount = () => {
@@ -95,17 +81,16 @@ const NavbarBanner = () => {
     }
   }, []);
 
-  // Handle logout
-  const handleLogout = () => {
+  const handleLogout = () => {    // Handle logout
     localStorage.removeItem("user"); // Remove user data
     setUser(null); // Clear state
     navigate("/login"); // Redirect to login page
   };
 
-
   return (
     <div className="navbar-banner">
       <div className="navbar-container">
+
         {/* Logo */}
         <div className="logo-container">
           <img src={AmazonLogo} alt="Amazon Logo" className="logo-image"></img>
@@ -124,27 +109,24 @@ const NavbarBanner = () => {
         {menuOpen && (
           <div className="menu-dropdown">
             <div className="menu-item">
-           
-            <div className="address-text dropdown-delivery pl-0.25">
-      <div className="phone-delivery-address flex cursor-pointer" onClick={handleLocationChange}>
-        <LocationOn className="delivery-icon" />
-        <div className="address-text">
-          <p className="text-xs text-slate-300">Delivering to {location}</p>
-          <p className="font-bold">Update location</p>
-        </div>
-      </div>
-    </div>
+              <div className="address-text dropdown-delivery pl-0.25">
+                <div className="phone-delivery-address flex cursor-pointer" onClick={handleLocationChange}>
+                  <LocationOn className="delivery-icon" />
+                  <div className="address-text">
+                    <p className="text-xs text-slate-300">Delivering to {location}</p>
+                    <p className="font-bold">Update location</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="">
-
               <div className="menu-item">
                 <div className="basket-section link" onClick={() => navigate("/wishlist")}>
                   <span className="basket-count text-sm">{wishlistCount}</span>
                   <FavoriteIcon className="basket-icon" />
                   <p className="basket-text text-sm text-white">Wishlist</p>
                 </div>
-
               </div>
               <div className="menu-item" onClick={() => navigate("/cart")}>
                 <div className="basket-section link">
@@ -155,11 +137,7 @@ const NavbarBanner = () => {
               </div>
             </div>
 
-
-
             <div className="menu-item relative group">
-
-
               {/* Dropdown Menu (Appears on Hover) */}
               <div className="relative group">
                 {/* Account Section */}
@@ -205,12 +183,12 @@ const NavbarBanner = () => {
 
         {/* Delivery Address (hidden on small screens) */}
         <div className="delivery-address hidden md:flex cursor-pointer" onClick={handleLocationChange}>
-      <LocationOn className="delivery-icon " />
-      <div className="address-text">
-        <p className="text-xs text-slate-300">Delivering to {location}</p>
-        <p className="font-bold">Update location</p>
-      </div>
-    </div>
+          <LocationOn className="delivery-icon " />
+          <div className="address-text">
+            <p className="text-xs text-slate-300">Delivering to {location}</p>
+            <p className="font-bold">Update location</p>
+          </div>
+        </div>
 
         {/* Search Bar (hidden on small screens) */}
         <div className="search-bar hidden md:flex">

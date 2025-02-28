@@ -1,5 +1,5 @@
 import React from 'react';
-import amazonLogo from '../../../public/images/amazonLogo.png';
+import amazonLogo from '../../images/amazonLogo.png';
 import './Footer.css';
 
 const Footer = () => {

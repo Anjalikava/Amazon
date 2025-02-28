@@ -61,13 +61,7 @@ const HomeBannerClickProducts = () => {
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {selectedProduct.imgs.map((img, index) => (
                     <div key={index} className="p-4 bg-white rounded-lg shadow flex flex-col items-center relative">
-                        <button
-                            className="absolute top-2 right-2 text-2xl focus:outline-none"
-                            onClick={() => toggleWishlist(index)}
-                        >
-                            {wishlist[index] ? "❤️" : "🤍"}
-                        </button>
-
+                     
                         <img src={img.url} alt={img.name} className="object-contain w-40 h-40 rounded-lg shadow" />
                         <p className="text-sm text-gray-700 mt-2 font-bold">{img.name}</p>
                         <p className="text-green-600 text-sm font-bold">{img.Price || "$30"}</p>

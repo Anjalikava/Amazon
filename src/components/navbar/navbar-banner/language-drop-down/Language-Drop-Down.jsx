@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Language-Drop-Down.css";
-import IndianFlag from "../../../../../public/images/india.png"; 
+import IndianFlag from "../../../../images/india.png"; 
+
 const languages = [
   { label: "English - EN", value: "EN" },
   { label: "हिन्दी - HI", value: "HI" },

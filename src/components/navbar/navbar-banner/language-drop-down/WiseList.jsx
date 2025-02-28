@@ -35,27 +35,27 @@ const Wishlist = () => {
             <tbody>
               {wishlist.map((item) => (
                 <tr key={item.id} className="hover:bg-gray-50">
-            <td className="py-2 px-4 border-b">
-  <img
-    src={
-      item.url || // Direct URL (as per your stored wishlist data)
-      item.imageUrl || 
-      (item.images && item.images.length > 0 ? item.images[0] : null) || 
-      (item.imgs && item.imgs.length > 0 ? item.imgs[0].url : null) || 
-      (item.img && item.img.url ? item.img.url : null) || 
-      "/default-image.jpg" 
-    }
-    alt={item.name || "Product"}
-    className="w-12 h-12 rounded object-cover"
-  />
-</td>
+                  <td className="py-2 px-4 border-b">
+                    <img
+                      src={
+                        item.url || // Direct URL (as per your stored wishlist data)
+                        item.imageUrl ||
+                        (item.images && item.images.length > 0 ? item.images[0] : null) ||
+                        (item.imgs && item.imgs.length > 0 ? item.imgs[0].url : null) ||
+                        (item.img && item.img.url ? item.img.url : null) ||
+                        "/default-image.jpg"
+                      }
+                      alt={item.name || "Product"}
+                      className="w-12 h-12 rounded object-cover"
+                    />
+                  </td>
 
                   <td className="py-2 px-4 border-b">
                     {item.title || item.name || item.description || "Unknown"}
                   </td>
                   <td className="py-2 px-4 border-b">
-    {item.price || item.Price || "N/A"}
-</td>
+                    {item.price || item.Price || "N/A"}
+                  </td>
 
                   <td className="py-2 px-4 border-b">
                     <button
